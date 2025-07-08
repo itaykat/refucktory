@@ -1208,7 +1208,7 @@ export default function LandingPage() {
                 </Link>
               </div>
             </div>
-            {/* <div className="space-y-4">
+            <div className="space-y-4">
               <h4 className="text-sm font-bold">Product</h4>
               <ul className="space-y-2 text-sm">
                 <li>
@@ -1222,67 +1222,42 @@ export default function LandingPage() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                    Integrations
+                  <Link href="#faq" className="text-muted-foreground hover:text-foreground transition-colors">
+                    FAQ
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                    API
+                  <Link href="/contact" className="text-muted-foreground hover:text-foreground transition-colors">
+                    Contact
                   </Link>
                 </li>
               </ul>
-            </div> */}
-            {/* <div className="space-y-4">
-              <h4 className="text-sm font-bold">Resources</h4>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                    Documentation
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                    Guides
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                    Blog
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                    Support
-                  </Link>
-                </li>
-              </ul>
-            </div> */}
-            {/* <div className="space-y-4">
+            </div>
+            <div className="space-y-4">
               <h4 className="text-sm font-bold">Company</h4>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+                  <Link href="/about" className="text-muted-foreground hover:text-foreground transition-colors">
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+                  <Link href="/careers" className="text-muted-foreground hover:text-foreground transition-colors">
                     Careers
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+                  <Link href="/privacy" className="text-muted-foreground hover:text-foreground transition-colors">
                     Privacy Policy
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+                  <Link href="/terms" className="text-muted-foreground hover:text-foreground transition-colors">
                     Terms of Service
                   </Link>
                 </li>
               </ul>
-            </div> */}
+            </div>
           </div>
           {/* <div className="flex flex-col gap-4 sm:flex-row justify-between items-center border-t border-border/40 pt-8">
             <p className="text-xs text-muted-foreground">
