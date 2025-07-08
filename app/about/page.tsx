@@ -1,6 +1,5 @@
 "use client"
 
-import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { motion } from "framer-motion"
@@ -36,14 +35,14 @@ export default function AboutPage() {
               transition={{ duration: 0.5 }}
               className="text-center max-w-4xl mx-auto mb-12"
             >
-              <Badge className="mb-4 rounded-full px-4 py-1.5 text-sm font-medium" variant="secondary">
+              {/* <Badge className="mb-4 rounded-full px-4 py-1.5 text-sm font-medium" variant="secondary">
                 About Us
-              </Badge>
+              </Badge> */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-                About Hard Reset Labs
+                About Us
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8">
-                [Content will be added here]
+                Cleaning up technical wreckage, one codebase at a time.
               </p>
             </motion.div>
           </div>
@@ -56,15 +55,12 @@ export default function AboutPage() {
               <Card className="p-8 md:p-12">
                 <CardContent className="space-y-6">
                   <div className="prose prose-lg max-w-none dark:prose-invert">
-                    <p className="text-muted-foreground">
-                      Content for the About page will be added here. This section can include:
+                    <p className="text-lg leading-relaxed mb-6">
+                      Hard Reset Labs exists for one reason: to clean up the technical wreckage left behind by well-meaning developers, rushed MVPs, and overconfident founders. We are a collective of engineers who've been deep in the trenches — from early-stage chaos to post-scale rot — and we know how to rebuild under pressure.
                     </p>
-                    <ul className="text-muted-foreground">
-                      <li>Company mission and vision</li>
-                      <li>Team background and expertise</li>
-                      <li>Company values and approach</li>
-                      <li>History and founding story</li>
-                    </ul>
+                    <p className="text-lg leading-relaxed">
+                      We specialize in refactors, architectural rewrites, Git hygiene, and narrative control for codebases that got a little out of hand. Behind the sarcasm, we're deadly serious about the quality and precision of what we ship.
+                    </p>
                   </div>
                 </CardContent>
               </Card>

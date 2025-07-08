@@ -43,7 +43,7 @@ export default function CareersPage() {
                 Join Hard Reset Labs
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8">
-                [Content will be added here]
+                We're not always hiring — but we're always watching.
               </p>
             </motion.div>
           </div>
@@ -56,16 +56,35 @@ export default function CareersPage() {
               <Card className="p-8 md:p-12">
                 <CardContent className="space-y-6">
                   <div className="prose prose-lg max-w-none dark:prose-invert">
-                    <p className="text-muted-foreground">
-                      Content for the Careers page will be added here. This section can include:
-                    </p>
-                    <ul className="text-muted-foreground">
-                      <li>Company culture and values</li>
-                      <li>Current job openings</li>
-                      <li>Benefits and perks</li>
-                      <li>Application process</li>
-                      <li>Remote work policies</li>
-                    </ul>
+                    <div className="space-y-6">
+                      <div>
+                        <p className="text-lg leading-relaxed mb-4">
+                          If you:
+                        </p>
+                        <ul className="space-y-3 text-lg leading-relaxed mb-6">
+                          <li className="flex items-start">
+                            <span className="text-primary mr-3 mt-1">•</span>
+                            Have shipped code that made a system faster, safer, or cleaner
+                          </li>
+                          <li className="flex items-start">
+                            <span className="text-primary mr-3 mt-1">•</span>
+                            Believe clear commits are a moral obligation
+                          </li>
+                        </ul>
+                        <p className="text-lg leading-relaxed mb-4">
+                          Then email us at{" "}
+                          <a
+                            href="mailto:careers@hardresetlabs.dev"
+                            className="text-primary hover:underline font-medium"
+                          >
+                            careers@hardresetlabs.dev
+                          </a>. Attach a repo you've saved or a refactor you're proud of. Bonus points if it comes with a commit message that made someone cry (for the right reasons).
+                        </p>
+                        <p className="text-lg leading-relaxed font-medium">
+                          No recruiters. No rockstars. No "ninjas." Just surgical engineers with standards.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
