@@ -1,5 +1,6 @@
 "use client"
 
+import Footer from "@/components/footer"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -71,7 +72,7 @@ export default function TermsOfServicePage() {
                       <div>
                         <h3 className="text-xl font-bold mb-3">2. Who We Are</h3>
                         <p className="text-base leading-relaxed">
-                          Hard Reset Labs is a collective of professional software engineers with extensive backgrounds in a wide range of technologies, systems, and architectural paradigms. While our website and language use humor, irony, and sarcasm to reflect developer reality, our work is rigorously professional, deeply methodical, and rooted in decades of engineering experience across startups, enterprises, and infrastructure teams. We take our craft — and your codebase — seriously.
+                          Hard Reset Labs is a collective of professional software engineers with extensive backgrounds in a wide range of technologies, systems, and architectural paradigms. While our website and language use humor, irony, and sarcasm to reflect developer reality, our work is rigorously professional, deeply methodical, and rooted in decades of engineering experience across startups, enterprises, and infrastructure teams. We take our craft - and your codebase - seriously.
                         </p>
                       </div>
 
@@ -120,7 +121,7 @@ export default function TermsOfServicePage() {
                       <div>
                         <h3 className="text-xl font-bold mb-3">9. Limitations of Liability</h3>
                         <p className="text-base leading-relaxed">
-                          Hard Reset Labs is not liable for business losses, data corruption, or misuse of advice. We offer professional judgment — not guarantees. Use our refactored code at your own discretion.
+                          Hard Reset Labs is not liable for business losses, data corruption, or misuse of advice. We offer professional judgment - not guarantees. Use our refactored code at your own discretion.
                         </p>
                       </div>
 
@@ -145,6 +146,7 @@ export default function TermsOfServicePage() {
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   )
 }

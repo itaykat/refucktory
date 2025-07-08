@@ -1,5 +1,6 @@
 "use client"
 
+import Footer from "@/components/footer"
 import { useEffect } from "react"
 
 export default function ContactPage() {
@@ -20,9 +21,9 @@ export default function ContactPage() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background flex flex-col">
       {/* Header with back button */}
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-8 flex-1">
         <div className="mb-8">
           <a
             href="/"
@@ -46,6 +47,7 @@ export default function ContactPage() {
           ></div>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

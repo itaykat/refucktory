@@ -1,5 +1,6 @@
 "use client"
 
+import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { motion } from "framer-motion"
@@ -56,7 +57,7 @@ export default function AboutPage() {
                 <CardContent className="space-y-6">
                   <div className="prose prose-lg max-w-none dark:prose-invert">
                     <p className="text-lg leading-relaxed mb-6">
-                      Hard Reset Labs exists for one reason: to clean up the technical wreckage left behind by well-meaning developers, rushed MVPs, and overconfident founders. We are a collective of engineers who've been deep in the trenches — from early-stage chaos to post-scale rot — and we know how to rebuild under pressure.
+                      Hard Reset Labs exists for one reason: to clean up the technical wreckage left behind by well-meaning developers, rushed MVPs, and overconfident founders. We are a collective of engineers who've been deep in the trenches - from early-stage chaos to post-scale rot - and we know how to rebuild under pressure.
                     </p>
                     <p className="text-lg leading-relaxed">
                       We specialize in refactors, architectural rewrites, Git hygiene, and narrative control for codebases that got a little out of hand. Behind the sarcasm, we're deadly serious about the quality and precision of what we ship.
@@ -68,6 +69,7 @@ export default function AboutPage() {
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   )
 }
