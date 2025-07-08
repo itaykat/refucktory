@@ -57,11 +57,17 @@ export default function AboutPage() {
                 <CardContent className="space-y-6">
                   <div className="prose prose-lg max-w-none dark:prose-invert">
                     <p className="text-lg leading-relaxed mb-6">
-                      Hard Reset Labs exists for one reason: to clean up the technical wreckage left behind by well-meaning developers, rushed MVPs, and overconfident founders. We are a collective of engineers who've been deep in the trenches - from early-stage chaos to post-scale rot - and we know how to rebuild under pressure.
+                      Hard Reset Labs exists for one reason: to clean up the technical wreckage left behind by well-meaning developers, rushed MVPs, and overconfident founders. We are a global collective of engineers who've been deep in the trenches - from early-stage chaos to post-scale rot - and we know how to rebuild under pressure.
+
+
+                    </p>
+                    <p className="text-lg leading-relaxed mb-6">
+                      We specialize in refactors, architectural rewrites, Git hygiene, and narrative control for codebases that got a little out of hand. We operate quietly, under the radar, and largely by referral - not out of mystique, but because our work speaks for itself (and also because some of our clients prefer not to publicly admit what their code looked like before we arrived).
                     </p>
                     <p className="text-lg leading-relaxed">
-                      We specialize in refactors, architectural rewrites, Git hygiene, and narrative control for codebases that got a little out of hand. Behind the sarcasm, we're deadly serious about the quality and precision of what we ship.
-                    </p>
+
+
+                      Behind the sarcasm, we're deadly serious about the quality and precision of what we ship. Every engagement is a commitment to clarity, correctness, and structural integrity. We don’t just improve code - we reset its trajectory.   </p>
                   </div>
                 </CardContent>
               </Card>

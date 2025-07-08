@@ -13,7 +13,7 @@ export default function Footer() {
               You Shipped It. Now It's Time to Defuse the Mess.
             </p>
             <div className="flex gap-4">
-              <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+              {/* <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -29,7 +29,7 @@ export default function Footer() {
                   <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                 </svg>
                 <span className="sr-only">Facebook</span>
-              </Link>
+              </Link> */}
               <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +47,7 @@ export default function Footer() {
                 </svg>
                 <span className="sr-only">Twitter</span>
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+              {/* <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -65,7 +65,7 @@ export default function Footer() {
                   <circle cx="4" cy="4" r="2"></circle>
                 </svg>
                 <span className="sr-only">LinkedIn</span>
-              </Link>
+              </Link> */}
             </div>
           </div>
           <div className="space-y-4">

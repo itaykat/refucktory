@@ -1,7 +1,6 @@
 "use client"
 
 import Footer from "@/components/footer"
-import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { motion } from "framer-motion"
@@ -37,14 +36,14 @@ export default function PrivacyPolicyPage() {
               transition={{ duration: 0.5 }}
               className="text-center max-w-4xl mx-auto mb-12"
             >
-              <Badge className="mb-4 rounded-full px-4 py-1.5 text-sm font-medium" variant="secondary">
+              {/* <Badge className="mb-4 rounded-full px-4 py-1.5 text-sm font-medium" variant="secondary">
                 Legal
-              </Badge>
+              </Badge> */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
                 Privacy Policy
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8">
-                Last updated: [Insert Date]
+                Last updated: July 8th, 2025
               </p>
             </motion.div>
           </div>
