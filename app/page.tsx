@@ -396,7 +396,7 @@ export default function LandingPage() {
             {/* <div className="size-8 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-primary-foreground">
               R
             </div> */}
-            <span>HARD RESET STUDIOS</span>
+            <span>HARD RESET LABS</span>
           </div>
           <nav className="hidden md:flex gap-8">
             <Link
@@ -1147,7 +1147,7 @@ export default function LandingPage() {
                 {/* <div className="size-8 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-primary-foreground">
                   S
                 </div> */}
-                <span>HARD RESET STUDIOS</span>
+                <span>HARD RESET LABS</span>
               </div>
               <p className="text-sm text-muted-foreground">
                 You Shipped It. Now It’s Time to Defuse the Mess.
