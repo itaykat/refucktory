@@ -19,7 +19,6 @@ import {
   X,
   Zap,
 } from "lucide-react"
-import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useState } from "react"
 
@@ -98,7 +97,7 @@ export default function LandingPage() {
       rating: 4,
     },
     {
-      quote: "Before Refucktory, our deploys were spiritual experiences. Now they're just… deploys.",
+      quote: "Before them, our deploys were spiritual experiences. Now they're just… deploys.",
       author: "Maya",
       role: "CTO @ funded app with 12 daily users",
       rating: 5,
@@ -164,7 +163,7 @@ export default function LandingPage() {
       rating: 4,
     },
     {
-      quote: "They refucktored our GraphQL server. Now it only returns what we ask for.",
+      quote: "They refactored our GraphQL server. Now it only returns what we ask for.",
       author: "Arjun",
       role: "frontend dev, finally unblocked",
       rating: 5,
@@ -272,13 +271,13 @@ export default function LandingPage() {
       rating: 4,
     },
     {
-      quote: "We built our MVP in V0, fast. Too fast. Refucktory cleaned up the auto-gen soup and made it look like humans wrote it.",
+      quote: "We built our MVP in V0, fast. Too fast. They cleaned up the auto-gen soup and made it look like humans wrote it.",
       author: "Alon",
       role: "founder who thought UI == product",
       rating: 5,
     },
     {
-      quote: "Our whole backend was Bolt. Until Refucktory asked 'where's your state?' We didn't have an answer.",
+      quote: "Our whole backend was Bolt. Until they asked 'where's your state?' We didn't have an answer.",
       author: "Tami",
       role: "solo dev, now journaling regularly",
       rating: 3,
@@ -338,7 +337,7 @@ export default function LandingPage() {
         "Only to explain to founders why their code is a war crime.",
     },
     {
-      question: "Who's actually behind Refucktory?",
+      question: "Who's actually behind it?",
       answer:
         "A collective of senior engineers, recovering tech leads, and ex-consultants who were tired of cleaning up messes quietly. Now we do it loud, fast, and professionally.",
     },
@@ -397,7 +396,7 @@ export default function LandingPage() {
             {/* <div className="size-8 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-primary-foreground">
               R
             </div> */}
-            <span>Refucktory</span>
+            <span>Hard Reset Studios</span>
           </div>
           <nav className="hidden md:flex gap-8">
             <Link
@@ -488,7 +487,7 @@ export default function LandingPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="text-center max-w-4xl mx-auto mb-12"
+              className="text-center max-w-5xl mx-auto mb-12"
             >
               {/* <Badge className="mb-4 rounded-full px-4 py-1.5 text-sm font-medium" variant="secondary">
                 Launching Soon
@@ -496,9 +495,9 @@ export default function LandingPage() {
               <h1 className="text-5xl md:text-3xl lg:text-6xl font-bold tracking-tight mb-6 text-white">
                 You Shipped It.
                 <br />
-                Now It's Time to Unfuck It.
+                Now It’s Time to Defuse the Mess.
               </h1>
-              <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+              <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
                 We'll refactor your weekend vibe coded abomination into something that doesn't make your next hire quit.
               </p>
 
@@ -535,7 +534,7 @@ export default function LandingPage() {
 
             </motion.div>
 
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
@@ -546,7 +545,7 @@ export default function LandingPage() {
                   src="/bg.jpg"
                   width={1280}
                   height={720}
-                  alt="Refucktory hero background"
+                  alt="Hard reset hero background"
                   className="w-full h-auto"
                   priority
                 />
@@ -554,7 +553,7 @@ export default function LandingPage() {
               </div>
               <div className="absolute -bottom-6 -right-6 -z-10 h-[300px] w-[300px] rounded-full bg-gradient-to-br from-primary/30 to-secondary/30 blur-3xl opacity-70"></div>
               <div className="absolute -top-6 -left-6 -z-10 h-[300px] w-[300px] rounded-full bg-gradient-to-br from-secondary/30 to-primary/30 blur-3xl opacity-70"></div>
-            </motion.div>
+            </motion.div> */}
           </div>
         </section>
 
@@ -866,7 +865,7 @@ export default function LandingPage() {
                     {[
                       {
                         name: "Code Regret",
-                        price: "$5,000+",
+                        price: "$1,000",
                         description: "You send the code, we send condolences. No fixes. Just truth.",
                         services: [
                           "Deep code review",
@@ -878,7 +877,7 @@ export default function LandingPage() {
                       },
                       {
                         name: "Shame Refactor",
-                        price: "$10,000+",
+                        price: "$5,000+",
                         description: "Full rewrite of your MVP into something that doesn't cry under load.",
                         services: [
                           "Full refactor, modular redesign",
@@ -1148,10 +1147,10 @@ export default function LandingPage() {
                 {/* <div className="size-8 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-primary-foreground">
                   S
                 </div> */}
-                <span>Refucktory</span>
+                <span>Hard Reset Studios</span>
               </div>
               <p className="text-sm text-muted-foreground">
-                You Shipped It. Now It's Time to Unfuck It.
+                You Shipped It. Now It’s Time to Defuse the Mess.
               </p>
               <div className="flex gap-4">
                 <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">

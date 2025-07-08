@@ -7,7 +7,7 @@ import type React from "react"
 const raleway = Raleway({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Refucktory  - You Shipped It. Now It’s Time to Unfuck It.",
+  title: "Rebase Studios  - You Shipped It. Now It’s Time to Defuse the Mess.",
   description: "You vibed a codebase into existence last weekend. Now it’s spaghetti with dreams."
 
 }
