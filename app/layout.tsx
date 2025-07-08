@@ -1,5 +1,6 @@
 import { ThemeProvider } from "@/components/theme-provider"
 import "@/styles/globals.css"
+import { Analytics } from "@vercel/analytics/next"
 import type { Metadata } from "next"
 import { Raleway } from "next/font/google"
 import type React from "react"
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className={raleway.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
           {children}
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
