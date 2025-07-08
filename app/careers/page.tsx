@@ -1,7 +1,6 @@
 "use client"
 
 import Footer from "@/components/footer"
-import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { motion } from "framer-motion"
@@ -37,11 +36,11 @@ export default function CareersPage() {
               transition={{ duration: 0.5 }}
               className="text-center max-w-4xl mx-auto mb-12"
             >
-              <Badge className="mb-4 rounded-full px-4 py-1.5 text-sm font-medium" variant="secondary">
+              {/* <Badge className="mb-4 rounded-full px-4 py-1.5 text-sm font-medium" variant="secondary">
                 Careers
-              </Badge>
+              </Badge> */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-                Join Hard Reset Labs
+                Join Us
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8">
                 Global project-based network of engineers focused on high-leverage interventions.
@@ -58,10 +57,10 @@ export default function CareersPage() {
                 <CardContent className="space-y-8">
                   <div className="prose prose-lg max-w-none dark:prose-invert">
                     <p className="text-lg leading-relaxed mb-6">
-                      At Hard Reset Labs, we operate as a global project-based network of experienced engineers focused on high-leverage interventions across all layers of the stack — from frontend to infrastructure, from dev tooling to backend systems. We don't offer traditional employment. We assemble precise teams of specialists per engagement to solve real problems with surgical precision.
+                      At Hard Reset Labs, we operate as a global project-based network of experienced engineers focused on high-leverage interventions across all layers of the stack - from frontend to infrastructure, from dev tooling to backend systems. We don't offer traditional employment. We assemble precise teams of specialists per engagement to solve real problems with surgical precision.
                     </p>
                     <p className="text-lg leading-relaxed mb-8">
-                      We partner with organizations that need to restore reliability, performance, and maintainability in systems under load. Whether it's a chaotic frontend bundle, a bloated CI/CD pipeline, or a distributed system outgrowing its foundation — we step in to rewrite, refactor, or rearchitect with clear boundaries and results.
+                      We partner with organizations that need to restore reliability, performance, and maintainability in systems under load. Whether it's a chaotic frontend bundle, a bloated CI/CD pipeline, or a distributed system outgrowing its foundation - we step in to rewrite, refactor, or rearchitect with clear boundaries and results.
                     </p>
 
                     <div className="space-y-8">
@@ -196,7 +195,7 @@ export default function CareersPage() {
                         <ul className="space-y-3 text-lg leading-relaxed">
                           <li className="flex items-start">
                             <span className="text-primary mr-3 mt-1 text-xl">•</span>
-                            Very competitive, transparent, contract-based pay — we reward depth, clarity, and delivery
+                            Very competitive, transparent, contract-based pay - we reward depth, clarity, and delivery
                           </li>
                           <li className="flex items-start">
                             <span className="text-primary mr-3 mt-1 text-xl">•</span>
@@ -214,10 +213,10 @@ export default function CareersPage() {
                         <p className="text-lg leading-relaxed mb-4">
                           Send a short email to{" "}
                           <a
-                            href="mailto:careers@hardresetlabs.com"
+                            href="mailto:careers@hardresetlabs.dev"
                             className="text-primary hover:underline font-medium"
                           >
-                            careers@hardresetlabs.com
+                            careers@hardresetlabs.dev
                           </a>{" "}
                           with:
                         </p>
@@ -240,7 +239,7 @@ export default function CareersPage() {
                           </li>
                         </ul>
                         <p className="text-lg leading-relaxed font-medium">
-                          We don't fill roles — we deploy talent into surgically scoped engagements. If you're serious about engineering and allergic to cruft, we want to hear from you.
+                          We don't fill roles - we deploy talent into surgically scoped engagements. If you're serious about engineering and allergic to cruft, we want to hear from you.
                         </p>
                       </div>
                     </div>
