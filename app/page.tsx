@@ -19,6 +19,7 @@ import {
   X,
   Zap,
 } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useState } from "react"
 
@@ -95,150 +96,175 @@ export default function LandingPage() {
       author: "Jon",
       role: "solo founder with imposter syndrome",
       rating: 4,
+      photo: "/1.png",
     },
     {
       quote: "Before them, our deploys were spiritual experiences. Now they're just… deploys.",
       author: "Maya",
       role: "CTO @ funded app with 12 daily users",
       rating: 5,
+      photo: "/2.png",
     },
     {
       quote: "They turned our 'AI SaaS platform' into an actual platform. Also told us to fire our backend guy. We did.",
       author: "Leon",
       role: "Head of Engineering, quietly relieved",
       rating: 5,
+      photo: "/3.png",
     },
     {
       quote: "They found a bug I'd gaslit my team about for 6 months.",
       author: "Anonymous",
       role: "still employed",
       rating: 3,
+      photo: "/4.png",
     },
     {
       quote: "We thought we needed more devs. Turns out we needed fewer files and fewer feelings.",
       author: "Elina",
       role: "product manager with PTSD",
       rating: 4,
+      photo: "/5.png",
     },
     {
       quote: "They didn't just refactor our code. They refactored our trauma.",
       author: "Alex",
       role: "cofounder with therapy budget",
       rating: 5,
+      photo: "/6.png",
     },
     {
       quote: "They found 3 different date libraries and 6 copies of lodash. We cried. Then we paid them.",
       author: "Two ex-founders",
       role: "now consultants",
       rating: 4,
+      photo: "/7.png",
     },
     {
       quote: "It used to crash when we scrolled. Now it's boring and stable. Thanks, I guess.",
       author: "Ron",
       role: "early user, hates change",
       rating: 3,
+      photo: "/8.png",
     },
     {
       quote: "They made my 'proof of concept' stop deleting users at random.",
       author: "CTO",
       role: "@ VC-funded mess",
       rating: 5,
+      photo: "/9.png",
     },
     {
       quote: "Now my side project doesn't crash when more than 2 people use it.",
       author: "Indie Hacker",
       role: "relieved",
       rating: 4,
+      photo: "/10.png",
     },
     {
       quote: "I wrote the original code drunk. They sobered it up without judging me.",
       author: "Felix",
       role: "weekend hacker turned VC-funded CEO",
       rating: 5,
+      photo: "/11.png",
     },
     {
       quote: "Our CI/CD pipeline was a Google Doc and a prayer. Now it's an actual pipeline.",
       author: "Dana",
       role: "formerly DevOps-in-name-only",
       rating: 4,
+      photo: "/12.png",
     },
     {
       quote: "They refactored our GraphQL server. Now it only returns what we ask for.",
       author: "Arjun",
       role: "frontend dev, finally unblocked",
       rating: 5,
+      photo: "/13.png",
     },
     {
       quote: "Their PR comments were brutal but correct. We merged them with tears.",
       author: "Chloe",
       role: "junior dev, now slightly more senior",
       rating: 3,
+      photo: "/14.png",
     },
     {
       quote: "The code they delivered runs faster, reads cleaner, and doesn't make my laptop overheat.",
       author: "Ben",
       role: "who used to hear fan noise as a warning signal",
       rating: 5,
+      photo: "/15.png",
     },
     {
       quote: "They removed an entire microservice by asking: 'Why does this exist?'",
       author: "Tali",
       role: "staff engineer, didn't have a good answer",
       rating: 4,
+      photo: "/16.png",
     },
     {
       quote: "We had 14 models for the same user object. They made it one. I didn't know that was legal.",
       author: "Omer",
       role: "backend developer in recovery",
       rating: 5,
+      photo: "/17.png",
     },
     {
       quote: "We used to call it 'tech debt.' They called it 'fraud.' We paid them anyway.",
       author: "Ronit",
       role: "serial founder, now ashamed",
       rating: 3,
+      photo: "/18.png",
     },
     {
       quote: "They told us to delete 80% of our code. So we did. Everything still works.",
       author: "Peter",
       role: "amazed and confused",
       rating: 4,
+      photo: "/19.png",
     },
     {
       quote: "It's not just code cleanup. It's an exorcism.",
       author: "Mira",
       role: "lead dev, finally sleeping at night",
       rating: 5,
+      photo: "/20.png",
     },
     {
       quote: "They opened our repo, sighed, and invoiced us. Worth every dollar.",
       author: "Sam",
       role: "founder, chronic over-promiser",
       rating: 4,
+      photo: "/21.png",
     },
     {
       quote: "They replaced 12,000 lines of code with 600 and told us to never touch it again.",
       author: "Niv",
       role: "ex-architect, now a minimalist",
       rating: 5,
+      photo: "/22.png",
     },
     {
       quote: "They found logic in a switch statement nested inside a regex. We didn't know that was possible.",
       author: "Ada",
       role: "engineer, still apologizing",
       rating: 3,
+      photo: "/23.png",
     },
     {
       quote: "We used to hotfix in prod via SSH. Now we have branches. And dignity.",
       author: "Ilya",
       role: "CTO, reformed cowboy",
       rating: 5,
+      photo: "/24.png",
     },
     {
       quote: "They deleted three folders and somehow fixed six bugs.",
       author: "Ziv",
       role: "confused but grateful",
       rating: 4,
+      photo: "/25.png",
     },
     {
       quote: "We had six versions of the same endpoint. They kept one. It works. We don't ask questions anymore.",
@@ -786,9 +812,19 @@ export default function LandingPage() {
                       </div>
                       <p className="text-lg mb-6 flex-grow">{testimonial.quote}</p>
                       <div className="flex items-center gap-4 mt-auto pt-4 border-t border-border/40">
-                        <div className="size-10 rounded-full bg-muted flex items-center justify-center text-foreground font-medium">
-                          {testimonial.author.charAt(0)}
-                        </div>
+                        {testimonial.photo ? (
+                          <Image
+                            src={testimonial.photo}
+                            alt={testimonial.author}
+                            width={40}
+                            height={40}
+                            className="size-10 rounded-full object-cover"
+                          />
+                        ) : (
+                          <div className="size-10 rounded-full bg-muted flex items-center justify-center text-foreground font-medium">
+                            {testimonial.author.charAt(0)}
+                          </div>
+                        )}
                         <div>
                           <p className="font-medium">{testimonial.author}</p>
                           <p className="text-sm text-muted-foreground">{testimonial.role}</p>
