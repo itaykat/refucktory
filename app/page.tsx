@@ -98,7 +98,7 @@ export default function LandingPage() {
       rating: 4,
     },
     {
-      quote: "Before Refucktor, our deploys were spiritual experiences. Now they're just… deploys.",
+      quote: "Before Refucktory, our deploys were spiritual experiences. Now they're just… deploys.",
       author: "Maya",
       role: "CTO @ funded app with 12 daily users",
       rating: 5,
@@ -272,13 +272,13 @@ export default function LandingPage() {
       rating: 4,
     },
     {
-      quote: "We built our MVP in V0, fast. Too fast. Refucktor cleaned up the auto-gen soup and made it look like humans wrote it.",
+      quote: "We built our MVP in V0, fast. Too fast. Refucktory cleaned up the auto-gen soup and made it look like humans wrote it.",
       author: "Alon",
       role: "founder who thought UI == product",
       rating: 5,
     },
     {
-      quote: "Our whole backend was Bolt. Until Refucktor asked 'where's your state?' We didn't have an answer.",
+      quote: "Our whole backend was Bolt. Until Refucktory asked 'where's your state?' We didn't have an answer.",
       author: "Tami",
       role: "solo dev, now journaling regularly",
       rating: 3,
@@ -338,7 +338,7 @@ export default function LandingPage() {
         "Only to explain to founders why their code is a war crime.",
     },
     {
-      question: "Who's actually behind Refucktor?",
+      question: "Who's actually behind Refucktory?",
       answer:
         "A collective of senior engineers, recovering tech leads, and ex-consultants who were tired of cleaning up messes quietly. Now we do it loud, fast, and professionally.",
     },
@@ -505,13 +505,17 @@ export default function LandingPage() {
 
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="rounded-full h-12 px-8 text-base">
-                  Send Us Your Sins
-                  <ArrowRight className="ml-2 size-4" />
-                </Button>
-                <Button size="lg" variant="outline" className="rounded-full h-12 px-8 text-base">
-                  Schedule a Confession
-                </Button>
+                <Link href="/contact">
+                  <Button size="lg" className="rounded-full h-12 px-8 text-base">
+                    Send Us Your Sins
+                    <ArrowRight className="ml-2 size-4" />
+                  </Button>
+                </Link>
+                <Link href="/contact">
+                  <Button size="lg" variant="outline" className="rounded-full h-12 px-8 text-base">
+                    Schedule a Confession
+                  </Button>
+                </Link>
               </div>
               <div className="flex items-center justify-center gap-4 mt-6 text-sm text-muted-foreground">
                 {/* <div className="flex items-center gap-1">
@@ -932,12 +936,14 @@ export default function LandingPage() {
                                   </li>
                                 ))}
                               </ul>
-                              <Button
-                                className={`w-full mt-auto rounded-full ${plan.popular ? "bg-primary hover:bg-primary/90" : "bg-muted hover:bg-muted/80"}`}
-                                variant={plan.popular ? "default" : "outline"}
-                              >
-                                {plan.cta}
-                              </Button>
+                              <Link href="/contact">
+                                <Button
+                                  className={`w-full mt-auto rounded-full ${plan.popular ? "bg-primary hover:bg-primary/90" : "bg-muted hover:bg-muted/80"}`}
+                                  variant={plan.popular ? "default" : "outline"}
+                                >
+                                  {plan.cta}
+                                </Button>
+                              </Link>
                             </CardContent>
                           </Card>
                         </motion.div>
@@ -1109,19 +1115,23 @@ export default function LandingPage() {
               className="flex flex-col items-center justify-center space-y-6 text-center"
             >
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
-                Ready to Transform Your Workflow?
+                It Got You a Demo. Now Make It Real.
               </h2>
               <p className="mx-auto max-w-[700px] text-primary-foreground/80 md:text-xl">
                 You’re not alone. Hundreds of devs have come clean, owned their mess, and shipped code they’re not afraid to show recruiters.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="rounded-full h-12 px-8 text-base hover:bg-primary/70">
-                  Send Us Your Sins
-                  <ArrowRight className="ml-2 size-4" />
-                </Button>
-                <Button size="lg" variant="outline" className="rounded-full h-12 px-8 text-base text-white">
-                  Schedule a Confession
-                </Button>
+                <Link href="/contact">
+                  <Button size="lg" className="rounded-full h-12 px-8 text-base hover:bg-primary/70">
+                    Send Us Your Sins
+                    <ArrowRight className="ml-2 size-4" />
+                  </Button>
+                </Link>
+                <Link href="/contact">
+                  <Button size="lg" variant="outline" className="rounded-full h-12 px-8 text-base text-white">
+                    Schedule a Confession
+                  </Button>
+                </Link>
               </div>
               <p className="text-sm text-primary-foreground/80 mt-4">
                 Cancel Anytime. No Refunds.
@@ -1249,7 +1259,7 @@ export default function LandingPage() {
                 </li>
               </ul>
             </div> */}
-            <div className="space-y-4">
+            {/* <div className="space-y-4">
               <h4 className="text-sm font-bold">Company</h4>
               <ul className="space-y-2 text-sm">
                 <li>
@@ -1273,9 +1283,9 @@ export default function LandingPage() {
                   </Link>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
-          <div className="flex flex-col gap-4 sm:flex-row justify-between items-center border-t border-border/40 pt-8">
+          {/* <div className="flex flex-col gap-4 sm:flex-row justify-between items-center border-t border-border/40 pt-8">
             <p className="text-xs text-muted-foreground">
               &copy; {new Date().getFullYear()} Refucktory. All rights reserved.
             </p>
@@ -1290,7 +1300,7 @@ export default function LandingPage() {
                 Cookie Policy
               </Link>
             </div>
-          </div>
+          </div> */}
         </div>
       </footer>
     </div >
