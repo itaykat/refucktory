@@ -1,15 +1,15 @@
-import type React from "react"
-import "@/styles/globals.css"
-import { Inter } from "next/font/google"
-import type { Metadata } from "next"
 import { ThemeProvider } from "@/components/theme-provider"
+import "@/styles/globals.css"
+import type { Metadata } from "next"
+import { Raleway } from "next/font/google"
+import type React from "react"
 
-const inter = Inter({ subsets: ["latin"] })
+const raleway = Raleway({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "SaaSify - Streamline Your Workflow",
-  description: "Boost productivity, reduce costs, and scale your business with our all-in-one SaaS platform.",
-    generator: 'v0.dev'
+  title: "Refucktory  - You Shipped It. Now It’s Time to Unfuck It.",
+  description: "You vibed a codebase into existence last weekend. Now it’s spaghetti with dreams."
+
 }
 
 export default function RootLayout({
@@ -19,8 +19,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+      <body className={raleway.className}>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
           {children}
         </ThemeProvider>
       </body>
